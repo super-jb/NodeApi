@@ -1,0 +1,7 @@
+{
+  "env" : {
+    "PORT": 8000,
+    "MONGO_ATLAS_PSW": "{INSERT YOUR MONGODB PASSWORD HERE}",
+    "JWT_KEY": "{INSERT YOUR SECRET HERE}"
+  }
+}
