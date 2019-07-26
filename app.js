@@ -4,6 +4,9 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
 //routing request process
 const productRoutes = require('./api/v1/routes/products');
 const orderRoutes = require('./api/v1/routes/orders');
@@ -36,6 +39,7 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/api/v1/products', productRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/users', userRoutes);

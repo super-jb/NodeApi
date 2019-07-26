@@ -33,7 +33,11 @@ https://jwt.io/
 * https://cloud.mongodb.com/v2/5d3661bcff7a250b453481fd#clusters  
 
 # Local env settings
-Before running application locally, make sure to update the **nodemon.json** file with your MongoDb password and your JWT Secret  
+Before running application locally, make sure to update the **nodemon.json** file with your MongoDb password and your JWT Secret 
+
+# Swagger Documentation
+Go to: localhost:8000/swagger  
+See existing routes for examples on how to use User defined routes  
 
 # Endpoints
 (@) *User Authentication required*  
